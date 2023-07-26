@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+        .btn-bg {
+            background: #121212;
+            color: white;
+        }
+        .btn-bg:hover {
+           
+            color: #121212;
+        }
     </style>
 
     <script>
@@ -26,12 +34,69 @@
     </script>
 </head>
 
-<body>
-    <header>
+<bodycla>
+    <header class="container ">
+        <div class="navbar bg-[#F85559] my-10 lg:w-[1200px] h-[120px] mx-auto rounded-full">
+            <div class="lg:navbar-start  ">
+                <ul class=" text-white gap-4 text-base font-medium lg:flex flex-row ml-8 cursor-pointer">
+                    <li><a>Homepage</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+
+            </div>
+            <div class="navbar-start lg:navbar-center  gap-3">
+                <img src="images/logo.png" alt="logo">
+                <h3 class="text-white text-4xl font-bold">Fruit Brust</h3>
+            </div>
+            <div class="lg:navbar-end mr-9 ">
+                <div class="form-control lg:flex-row items-center ">
+                    <input type="text" placeholder="Search here" class="input bg-white rounded-full  md: w-auto" />
+                    <span class="absolute pl-40 text-white"><img src="images/Frame.png" alt=""></span>
+                </div>
+                </button>
+
+            </div>
+        </div>
 
     </header>
-    <main></main>
+    <main>
+        <section class="mx-44">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle  btn-bg border-black">❮</a>
+                        <a href="#slide2" class="btn btn-circle  btn-bg border-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle btn-bg border-black">❮</a>
+                        <a href="#slide3" class="btn btn-circle btn-bg border-black ">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle btn-bg border-black ">❮</a>
+                        <a href="#slide4" class="btn btn-circle btn-bg border-black ">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle btn-bg border-black ">❮</a>
+                        <a href="#slide1" class="btn btn-circle btn-bg border-black ">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
     <footer></footer>
-</body>
+    </body>
 
 </html>
