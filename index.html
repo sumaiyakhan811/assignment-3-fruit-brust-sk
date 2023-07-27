@@ -7,8 +7,16 @@
     <title>Fruit Brust</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- font-script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- custome css style -->
     <style>
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+
         .btn-bg {
             background: #121212;
             color: white;
@@ -18,8 +26,14 @@
 
             color: #121212;
         }
-    </style>
 
+        p {
+            font-size: 14px;
+            color: rgba(18, 18, 18, 0.60);
+            font-weight: 500 px;
+        }
+    </style>
+    <!-- tailwind and daisy ui cdn -->
     <script>
         tailwind.config = {
             theme: {
@@ -35,10 +49,10 @@
     </script>
 </head>
 
-<bodycla>
+<body class="lato">
     <header class="container ">
         <div class="navbar bg-[#F85559] my-10 lg:w-[1200px] h-[120px] mx-auto rounded-full">
-            <div class="lg:navbar-start  ">
+            <div class="navbar-start  ">
                 <ul class=" text-white gap-4 text-base font-medium lg:flex flex-row ml-8 cursor-pointer">
                     <li><a>Homepage</a></li>
                     <li><a>About Us</a></li>
@@ -47,11 +61,11 @@
                 </ul>
 
             </div>
-            <div class="navbar-start lg:navbar-center  gap-3">
+            <div class="navbar-center flex justify-center">
                 <img src="images/logo.png" alt="logo">
                 <h3 class="text-white text-4xl font-bold">Fruit Brust</h3>
             </div>
-            <div class="lg:navbar-end mr-9 ">
+            <div class="navbar-end mr-9 ">
                 <div class="form-control lg:flex-row items-center ">
                     <input type="text" placeholder="Search here" class="input bg-white rounded-full  md: w-auto" />
                     <span class="absolute pl-40 text-white"><img src="images/Frame.png" alt=""></span>
@@ -63,70 +77,95 @@
 
     </header>
     <main>
+        <!-- HERO CAROUSAL -->
         <section class="mx-44">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img src="/images/banner1.png" class="w-full" />
-                    <div class="hero-overlay bg-opacity-80"></div>
+                    <img src="/images/banner1.png" class="w-full opacity-80" />
+                    <!-- <div class="hero-overlay bg-opacity-25"></div> -->
                     <div
                         class="absolute flex justify-between  items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle  btn-bg border-black">❮</a>
                         <div class=" flex flex-col items-center text-white">
                             <h1 class="mb-5 text-7xl font-extrabold text-center">Exotic tastes at your <br> doorstep
                             </h1>
-                            <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                            <p class="mb-5 text-xl font-medium text-white">We supply highly quality organic fresh fruits</p>
                             <button class="btn capitalize bg-[#F85559] border-none text-white">Shop Now</button>
                         </div>
                         <a href="#slide2" class="btn btn-circle  btn-bg border-black">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                    <img src="/images/banner2.png" class="w-full" />
-                    <div class="hero-overlay bg-opacity-80"></div>
-                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <img src="/images/banner2.png" class="w-full opacity-80" />
+                    <!-- <div class="hero-overlay bg-opacity-25"></div> -->
+                    <div
+                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle btn-bg border-black">❮</a>
                         <div class=" flex flex-col items-center text-white">
                             <h1 class="mb-5 text-7xl font-extrabold text-center">Exotic tastes at your <br> doorstep
                             </h1>
-                            <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                            <p class="mb-5 text-xl font-medium text-white">We supply highly quality organic products</p>
                             <button class="btn capitalize bg-[#F85559] border-none text-white">Shop Now</button>
                         </div>
                         <a href="#slide3" class="btn btn-circle btn-bg border-black ">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
-                    <img src="/images/banner3.png" class="w-full" />
-                    <div class="hero-overlay bg-opacity-80"></div>
-                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <img src="/images/banner3.png" class="w-full opacity-80" />
+                    <!-- <div class="hero-overlay bg-opacity-25"></div> -->
+                    <div
+                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle btn-bg border-black ">❮</a>
                         <div class=" flex flex-col items-center text-white">
                             <h1 class="mb-5 text-7xl font-extrabold text-center">Exotic tastes at your <br> doorstep
                             </h1>
-                            <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                            <p class="mb-5 text-xl font-medium text-white">We supply highly quality organic products</p>
                             <button class="btn capitalize bg-[#F85559] border-none text-white">Shop Now</button>
                         </div>
                         <a href="#slide4" class="btn btn-circle btn-bg border-black ">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
-                    <img src="/images/banner4.png" class="w-full" />
-                    <div class="hero-overlay bg-opacity-80"></div>
-                    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <img src="/images/banner4.png" class="w-full opacity-80" />
+                    <!-- <div class="hero-overlay bg-opacity-25"></div> -->
+                    <div
+                        class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle btn-bg border-black ">❮</a>
                         <div class=" flex flex-col items-center text-white">
                             <h1 class="mb-5 text-7xl font-extrabold text-center">Exotic tastes at your <br> doorstep
                             </h1>
-                            <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                            <p class="mb-5 text-xl font-medium text-white">We supply highly quality organic products</p>
                             <button class="btn capitalize bg-[#F85559] border-none text-white">Shop Now</button>
                         </div>
                         <a href="#slide1" class="btn btn-circle btn-bg border-black ">❯</a>
                     </div>
                 </div>
             </div>
+            <div>
 
+            </div>
         </section>
+        <!-- HERO CAROUSAL END -->
+
+        <!-- SECTION DEAL OF THE DAY -->
+        <section class="mx-44 ">
+            <div class="flex flex-col lg:flex-row">
+                <div>
+                    <h3 class="text-4xl font-bold">Deal of the day</h3>
+                    <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots
+                        in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div></div>
+        </section>
+
+        <!-- SECTION DEAL OF THE DAY END-->
+
     </main>
     <footer></footer>
-    </body>
+</body>
 
 </html>
